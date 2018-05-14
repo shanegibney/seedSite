@@ -1,5 +1,6 @@
 body {
-  height: 5000px;
+  height: 3500px;
+  /* background-color: black; */
 }
 
 /* div{
@@ -248,6 +249,21 @@ hr {
 .commontext{
     padding-left: 10px;
     font-size: 15px;
+}
+
+.footerButton{
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+#footer{
+  background-color: black;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.footer {
+    background-color:black;
 }
 /* .btn-text b{display:inline}
 .btn-text:not(.collapsed)  span{display:none}
