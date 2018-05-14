@@ -106,6 +106,22 @@ $(document).ready(function() {
     }
   });
 
+  $('.SMore').click(function() {
+    var $this = $(this);
+    // $this.toggleClass('SMore2');
+    if ($this.hasClass('.SMore')) {
+      console.log("aaa");
+      $this.removeClass('.SMore')
+      $this.addClass('.SMore2')
+      $this.text('SEE MORE');
+    } else {
+      console.log("bbb");
+      $this.removeClass('.SMore2')
+      $this.addClass('.SMore')
+      $this.text('SEE LESS');
+    }
+  });
+
 
   // var h = $(window).height() / 4;
   // console.log("window.height = " + h);
