@@ -16,6 +16,10 @@ body {
   margin-left: 50px;
 }
 
+.showBorder{
+  border: 1px solid red;
+}
+
 .borderme {
   padding:0px;
   spacing: 0px;
@@ -152,8 +156,8 @@ nav {
     /* background-color: blueviolet; */
     /* padding-top: : 500px; */
     font-size: 35px;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 
 .archive {
