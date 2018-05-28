@@ -3,9 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sticky navbar</title>
+  <title>Seed Archive</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="transfonter.org-20180527-205708/stylesheet.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <style media="screen">
+    body {
+      font-family: 'Founders Grotesk';
+      font-weight: 500;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,8 +27,14 @@
     <!-- <video autoplay muted loop id="myVideo">
         <source src="02_IMAGES/01_Home/test_02.mov" type="video/mp4">
     </video> -->
-    <video autoplay muted loop id="myVideo">
+    <!-- <video autoplay muted loop id="myVideo">
       <source src="02_IMAGES/01_Home/Time-Lapse.mp4" type="video/mp4">
+    </video> -->
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src="02_IMAGES/01_Home/C0008.mp4" type="video/mp4">
+    </video> -->
+    <video autoplay muted loop id="myVideo">
+      <source src="02_IMAGES/01_Home/Video_Test_02.mp4" type="video/mp4">
     </video>
     <div class="row">
       <div class="col-md-2 logo"><img style="margin-top: 20px; margin-left:0px; padding:0px;" class="img-fluid" src="02_IMAGES/01_Home/Logo_01.png" />
@@ -47,7 +62,7 @@
         <a href="#aboutNavigate"><strong>ABOUT</strong></a>
       </div>
       <div class="p-2 menu-item">
-        <a class="menu-item" href="#shiftdown"><strong>ARCHIVE</strong></a>
+        <a class="menu-item" href="#archive"><strong>ARCHIVE</strong></a>
       </div>
       <div class="p-2 menu-item">
         <a class="menu-item" href="#publication"><strong>PUBLICATION</strong></a>
@@ -77,10 +92,9 @@
         loss. We rely on the support of people to assist in the re-introduction of these wildflowers across Ireland by distributing seeds in their local area..</strong>
       </div>
     </div>
-
   </div>
-  <div class="container">
 
+  <div class="container">
     <div class="row">
       <div class="col-md-12 about" id="about">
         <button type="button" class="btn btn-archive SeeMore" data-toggle="collapse" data-target="#aboutshow">READ MORE</button>
@@ -88,8 +102,14 @@
     </div>
   </div>
 
-
-  <div class="container archive" id="archive">
+  <div class="container" id="archive">
+    <div class="row">
+      <div class="col-md-12" style="color:white;">
+        allow for sticky navbar height
+      </div>
+    </div>
+  </div>
+  <div class="container archive">
     <div class="row">
       <div class="col-12">
         <span class="archivetitle"><strong>The Archive</strong></span>
@@ -108,13 +128,13 @@
             <strong>Our online archive provides information on each individual specimen. This key indicates the most rare, common and uncommon plants in Ireland. Search the habitats below</strong>
           </div>
           <div class="col-2 common">
-            <img height="40px" src="icons/commonBlack.png"> <span class="commontext"><strong>Common</strong></span>
+            <img height="40px" src="Icons_PNG/Icons_Black-01.png"> <span class="commontext"><strong>Common</strong></span>
           </div>
           <div class="col-2 common">
-            <img height="40px" src="icons/commonBlack.png"><span class="commontext"><strong>Uncommon</strong></span>
+            <img height="40px" src="Icons_PNG/Icons_Black-02.png"><span class="commontext"><strong>Uncommon</strong></span>
           </div>
           <div class="col-2 common">
-            <img height="40px" src="icons/commonBlack.png"><span class="commontext"><strong>Rare</strong></span>
+            <img height="40px" src="Icons_PNG/Icons_Black-03.png"><span class="commontext"><strong>Rare</strong></span>
           </div>
         </div>
       </div>
@@ -143,56 +163,56 @@
       </div>
 
       <div class="row first-archive">
-        <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/Fuchsia/Fuschia-Fuchsia-magellanica.png" />
+        <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/Fuchsia/Fuschia-Fuchsia-magellanica.png" /><a>
         </div>
-        <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/Knapweed/Knapweed-Centaurea.png" />
+        <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/Knapweed/Knapweed-Centaurea.png" /></a>
         </div>
-        <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/Meadow-Sweet/Meadow-Sweet.png" />
+        <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/Meadow-Sweet/Meadow-Sweet.png" /></a>
         </div>
       </div>
 
       <div class="row archive-name">
         <div class="col-md-4">
           <hr>
-          <h3 class="archive-flower-name">Fuschia</h3>
+          <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Fuschia</a></h3>
           <h5>Fuschia-Fuchsia-magellanica</h5>
         </div>
         <div class="col-md-4">
           <hr>
-          <h3 class="archive-flower-name">Knapweed</h3>
+          <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Knapweed</a></h3>
           <h5>Knapweed Centaurea</h5>
         </div>
         <div class="col-md-4">
           <hr>
-          <h3 class="archive-flower-name">Meadow Sweet</h3>
+          <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Meadow Sweet</a></h3>
           <h5>Meadow Sweet</h5>
         </div>
       </div>
 
 
       <div class="row first-archive">
-        <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/Redshank/RedShank-Persicariamaculosa.png" />
+        <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/Redshank/RedShank-Persicariamaculosa.png" /></a>
         </div>
-        <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/scarlet-Pimperwell/ScarletPimpernel-AnagallisArvensis.png" />
+        <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/scarlet-Pimperwell/ScarletPimpernel-AnagallisArvensis.png" /></a>
         </div>
-        <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/speedwell/Speedwell-Veronica.png" />
+        <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/speedwell/Speedwell-Veronica.png" /></a>
         </div>
       </div>
 
       <div class="row archive-name">
         <div class="col-md-4">
           <hr>
-          <h3 class="archive-flower-name">Redshank</h3>
+          <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Redshank</a></h3>
           <h5>Persicariamaculosa</h5>
         </div>
         <div class="col-md-4">
           <hr>
-          <h3 class="archive-flower-name">Scarlet Pimperwell</h3>
+          <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Scarlet Pimperwell</a></h3>
           <h5>Anagallis Arvensis</h5>
         </div>
         <div class="col-md-4">
           <hr>
-          <h3 class="archive-flower-name">Speedwell</h3>
+          <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Speedwell</a></h3>
           <h5>Veronica</h5>
         </div>
       </div>
@@ -200,28 +220,28 @@
       <div class="container collapse-container">
         <div id="demo" class="collapse">
           <div class="row first-archive">
-            <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/toad-Flax/ToadFlax-Linariavulgaris.png" />
+            <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/toad-Flax/ToadFlax-Linariavulgaris.png" /></a>
             </div>
-            <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/Water-Mint/WaterMint-MenthaAquatica.png" />
+            <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/Water-Mint/WaterMint-MenthaAquatica.png" /></a>
             </div>
-            <div class="col-md-4"><img class="img-fluid" src="Flowers/Bogland/willow-herb/WilowHerb-Epilobium.png" />
+            <div class="col-md-4"><a href="Fuschia.html"><img class="img-fluid" src="Flowers/Bogland/willow-herb/WilowHerb-Epilobium.png" /></a>
             </div>
           </div>
 
           <div class="row archive-name">
             <div class="col-md-4">
               <hr>
-              <h3 class="archive-flower-name">Toad Flax</h3>
+              <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Toad Flax</a></h3>
               <h5>Linariavulgaris</h5>
             </div>
             <div class="col-md-4">
               <hr>
-              <h3 class="archive-flower-name">Water Mint</h3>
+              <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Water Mint</a></h3>
               <h5>MenthaAquatica</h5>
             </div>
             <div class="col-md-4">
               <hr>
-              <h3 class="archive-flower-name">willow Herb</h3>
+              <h3 class="archive-flower-name"><a style="color:white;" href="Fuschia.html">Willow Herb</a></h3>
               <h5>Epilobium</h5>
             </div>
           </div>

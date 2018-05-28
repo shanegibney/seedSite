@@ -11,6 +11,11 @@ body {
    padding: 0 0px !important;
 }
 
+.item{
+      position: relative;
+      text-align: center;
+      color: white;
+}
 .logo{
   /* padding-left: 130px; */
   margin-left: 50px;
@@ -31,14 +36,18 @@ body {
   position:relative; top:-0px;
 }
 
+.archive-expand{
+  
+}
+
 .navs{
   font-size: 25px;
   padding-left: 9%;
   padding-right: 11%;
-margin-top: auto;
-margin-bottom: auto;
-vertical-align: middle;
-background-color: #fff;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;
+  background-color: #fff;
 }
 
 /*sticky header position*/
@@ -163,6 +172,10 @@ nav {
 .archive {
     margin-top: 90px;
     /* background-color: darksalmon; */
+}
+
+.item{
+
 }
 
 /* .hr-archive {

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, noarchive">
+  <meta name="format-detection" content="telephone=no"> -->
+  <title>Seed Archive</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styleFuschia.css">
+  <link href="transfonter.org-20180527-205708/stylesheet.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+  <style>
+    body {
+      font-family: 'Founders Grotesk';
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    /* html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    } */
+
+    /* HTML5 display-role reset for older browsers */
+
+    /* article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    } */
+
+    /* common styles */
+
+    /* body {
+      background: #f1f1f1;
+      color: #000;
+    } */
+
+    /* .page {
+      background: #fff;
+      width: 920px;
+      margin: 0 auto;
+      padding: 20px 20px 0 20px;
+      overflow: hidden;
+    } */
+
+    /* .font-container {
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin-bottom: 40px;
+      line-height: 1.3;
+      white-space: nowrap;
+      padding-bottom: 5px;
+    } */
+
+    /* h1 {
+      position: relative;
+      background: #444;
+      font-size: 32px;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 -20px 12px -20px;
+    } */
+
+    .letters {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .s10:before {
+      content: '10px';
+    }
+
+    .s11:before {
+      content: '11px';
+    }
+
+    .s12:before {
+      content: '12px';
+    }
+
+    .s14:before {
+      content: '14px';
+    }
+
+    .s18:before {
+      content: '18px';
+    }
+
+    .s24:before {
+      content: '24px';
+    }
+
+    .s30:before {
+      content: '30px';
+    }
+
+    .s36:before {
+      content: '36px';
+    }
+
+    .s48:before {
+      content: '48px';
+    }
+
+    .s60:before {
+      content: '60px';
+    }
+
+    .s72:before {
+      content: '72px';
+    }
+
+    .s10:before,
+    .s11:before,
+    .s12:before,
+    .s14:before,
+    .s18:before,
+    .s24:before,
+    .s30:before,
+    .s36:before,
+    .s48:before,
+    .s60:before,
+    .s72:before {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      color: #999;
+      padding-right: 6px;
+    }
+
+    /* pre {
+      display: block;
+      position: relative;
+      padding: 9px;
+      margin: 0 0 10px;
+      font-family: Monaco, Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 13px;
+      line-height: 1.428571429;
+      color: #333;
+      font-weight: normal !important;
+      font-style: normal !important;
+      background-color: #f5f5f5;
+
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    border-radius: 4px;
+    }
+
+    */
+
+    /* pre:after {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      content: 'Usage';
+      line-height: 1;
+      padding: 5px 8px;
+      font-size: 12px;
+      color: #767676;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-top: none;
+      border-radius: 0 4px 0 4px;
+      z-index: 10;
+    } */
+
+    /* responsive */
+
+    @media (max-width: 959px) {
+      .page {
+        width: auto;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- About Container -->
+
+  <div class="container-fluid item">
+    <div class="row">
+      <div class="col-12">
+        <div class="row archive-text">
+          <div class="col-12 showBorder containing font-container">
+            <img class="archive-main-img" src="Flowers/Bogland/Meadow-Sweet/Meadow-Sweet.png" alt="Fuschia">
+            <div class="centered showBorder" style="font-size: 72px;">Bird’s-foot Trefoil</br>
+              <span>Lotus Corniculatus</span></br>
+              <i class=" far fa-circle fa-xs "></i><span style="font-size:18px; ">Add</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item ">
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="row archive-text ">
+          <div class="col-12 archive-title showBorder " style="color:white; ">
+            Archiving
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item ">
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="row archive-text ">
+          <div class="col-12 showBorder ">
+            <img class="archive-main-img archive-outline-img " src="/02_IMAGES/02_Archive/archiveOutline.png " alt="Fuschia ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item about" id="about">
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="row archive-text ">
+          <div class="col-12 archive-text-block ">
+            This straggly annual wildflower is perhaps our most frequent Speedwell around the country. Found on bare soil, cultivated and waste ground, it is quite downy. Pretty bright blue flowers (8-12mm across) are borne solitarily on thin, sometimes reddish,
+            stems which only reach to about 20cm high. The corolla has four lobes, the lower one being smaller and white, and it has two stamens. The hairy oval leaves are pale green with toothed margins. This lovely little flower blooms all year round
+            and is a
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row archive-text">
+      <div class="col-12 collapse archive-text-block" id="aboutshow">
+        This straggly annual wildflower is perhaps our most frequent Speedwell around the country. Found on bare soil, cultivated and waste ground, it is quite downy. Pretty bright blue flowers (8-12mm across) are borne solitarily on thin, sometimes reddish,
+        stems which only reach to about 20cm high. The corolla has four lobes, the lower one being smaller and white, and it has two stamens. The hairy oval leaves are pale green with toothed margins. This lovely little flower blooms all year round and
+        is a
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container showBorder">
+    <div class="row">
+      <div class="col-md-12 archive-expand archive-text-block straggly" id="about">
+        <a class="SeeMore" data-toggle="collapse" data-target="#aboutshow"><u>VIEW MORE</u></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item ">
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="row archive-text ">
+          <div class="col-12 showBorder " style="color:white; ">
+            Distribution
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item ">
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="row archive-text ">
+          <div class="col-12 showBorder " style="color:black; ">
+            <img width="70% " src="/02_IMAGES/02_Archive/archiveMapImage.png " alt="Fuschia ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item ">
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="row archive-text ">
+          <div class="col-12 showBorder " style="color:white; ">
+            Bird’s-foot Trefoil is needed in your area
+          </div>
+          <div style="margin-left: 40%; margin-top: 20px; ">
+            <i class=" far fa-circle fa-xs "></i> Add
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item ">
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="row archive-text ">
+          <div class="col-12 showBorder " style="color:black; ">
+            <a href="/ "><h3 class="home-link "><u>Return Archive</u><h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.SeeMore').click(function() {
+        var $this = $(this);
+        // $this.toggleClass('SeeMore2');
+        if ($this.hasClass('.SeeMore')) {
+          console.log("aaa");
+          $this.removeClass('.SeeMore')
+          $this.addClass('.SeeMore2')
+          $this.text('VIEW LESS');
+        } else {
+          console.log("bbb");
+          $this.removeClass('.SeeMore2')
+          $this.addClass('.SeeMore')
+          $this.text('VIEW MORE');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
