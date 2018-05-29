@@ -117,6 +117,7 @@ width: 70%;
 
 .archive-text-block{
   text-align: left;
+  font-size: 21px;
 }
 
 .archive-text {
@@ -362,11 +363,6 @@ color: white;
 
 .archive-name {
     margin-top: 30px;
-}
-
-.archive-flower-name {
-    color: white;
-
 }
 
 

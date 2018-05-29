@@ -34,10 +34,7 @@ body {
   margin-left: 0px;
 }
 
-.archive-subtitle{
-  font-family: 'Founders Grotesk Mono';
-  color: white;
-}
+
 #archive{
   position:relative; top:-0px;
 }
@@ -240,6 +237,13 @@ hr{
 
 .archive-flower-name {
     color: white;
+    font-size: 29px;
+}
+
+.archive-subtitle{
+  font-family: 'Founders Grotesk Mono';
+  color: white;
+  font-size: 18px;
 }
 
 .remove-underline{
