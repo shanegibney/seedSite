@@ -62,6 +62,7 @@ body {
     /* top: 50%; */
     bottom: 18%;
     left: 45.5%;
+    /* left: 10%; */
     transform: translate(-50%, -50%);
     font-size: 50px;
 }
@@ -189,10 +190,14 @@ nav {
   width: 100%
 }
 
-/* Style the navbar */
+.days{
+  color:green;
+}
+
 .seeds{
-  color: white;
+  color: red;
   text-align: right;
+  margin-top: 20px;
 }
 
 #navbar {

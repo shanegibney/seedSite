@@ -186,11 +186,10 @@ nav {
 
 }
 
-/* .hr-archive {
-    /* margin-top: 0px;
-    margin-bottom: 30px;*/
-    /* color: red;  */
-/* }  */
+
+.hr-archive{
+  border-top: 4px solid black;
+}
 
 hr{
   /* border-color: #EEEEEE -moz-use-text-color #FFFFFF; */
@@ -204,6 +203,9 @@ hr{
     /* border-bottom: 20px; */
     background-color: #201f21;
 }
+
+
+
 
 .archivetitle{
   font-size: 68px;
