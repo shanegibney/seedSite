@@ -2,7 +2,6 @@ body {
   height: 3500px;
   /* background-color: black; */
   /* background-color: #201f21; */
-
 }
 
 /* div{
@@ -12,6 +11,33 @@ body {
 .container-fluid{
    padding: 0 0px !important;
 }
+
+/* .showBogland{
+  background-color: green;
+} */
+
+.showBogland {
+    /* display: none; */
+    /* background-color: purple; */
+}
+
+.showCoastal {
+    /* display: none; */
+    /* background-color: blue; */
+}
+
+.showGrassland {
+    /* display: none; */
+    /* background-color: green; */
+}
+
+.showWoodland{
+    /* display: none; */
+    /* background-color: brown; */
+}
+/* .noshowBogland.noshowCoastal.noshowGrassland.noshowWoodland{
+    display: none;
+} */
 
 .item{
       position: relative;
@@ -260,7 +286,13 @@ hr{
     color: white;
 }
 
-.search-text:hover { COLOR: green; }
+.search-text:hover {
+  color: green;
+}
+
+.keepcolor{
+  color: green;
+}
 
 .footer {
     height: 300px;
