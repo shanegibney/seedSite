@@ -91,6 +91,8 @@ $(document).ready(function() {
   // }
 
   $('.SeeMore').click(function() {
+    $("#demo").addClass("collapse");
+
     var $this = $(this);
     // $this.toggleClass('SeeMore2');
     if ($this.hasClass('.SeeMore')) {
@@ -331,7 +333,11 @@ $(document).ready(function() {
       $(".bogland").removeClass("keepcolor");
       $(".woodland").removeClass("keepcolor");
       $(".grassland").removeClass("keepcolor");
+      //remove collapse class
+      $("#demo").removeClass("collapse");
     } else {
+      //add collapse class back
+      $("#demo").addClass("collapse");
       $(".showBogland").show();
       $(".showCoastal").show(); //unnecessary it is already shown
       $(".showWoodland").show();
@@ -359,7 +365,11 @@ $(document).ready(function() {
       $(".coastal").removeClass("keepcolor");
       $(".woodland").removeClass("keepcolor");
       $(".grassland").removeClass("keepcolor");
+      //remove collapse class
+      $("#demo").removeClass("collapse");
     } else {
+      //add collapse class back
+      $("#demo").addClass("collapse");
       $(".showBogland").show(); //unnecessary it is already shown
       $(".showCoastal").show();
       $(".showWoodland").show();
@@ -387,7 +397,11 @@ $(document).ready(function() {
       $(".bogland").removeClass("keepcolor");
       $(".coastal").removeClass("keepcolor");
       $(".grassland").removeClass("keepcolor");
+      //remove collapse class
+      $("#demo").removeClass("collapse");
     } else {
+      //add collapse class back
+      $("#demo").addClass("collapse");
       $(".showBogland").show();
       $(".showCoastal").show(); //unnecessary it is already shown
       $(".showWoodland").show();
@@ -414,7 +428,11 @@ $(document).ready(function() {
       $(".bogland").removeClass("keepcolor");
       $(".woodland").removeClass("keepcolor");
       $(".coastal").removeClass("keepcolor");
+      //remove collapse class
+      $("#demo").removeClass("collapse");
     } else {
+      //add collapse class back
+      $("#demo").addClass("collapse");
       $(".showBogland").show();
       $(".showCoastal").show(); //unnecessary it is already shown
       $(".showWoodland").show();
